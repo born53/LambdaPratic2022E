@@ -20,7 +20,7 @@ public class C3_MultiArrays_StreamOrnekleri {
 
 
     }
-    // S1 : tum elemanlari list yapayim
+    // S1 : tum elemanlari list yapalim
 
 
 

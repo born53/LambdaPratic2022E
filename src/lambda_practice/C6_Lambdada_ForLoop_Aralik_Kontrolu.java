@@ -25,10 +25,11 @@ public class C6_Lambdada_ForLoop_Aralik_Kontrolu {
 
     //S5: 325 ile 468 arasinda 8 e bolunen kac sayi vardir?
 
-    //S6: 325 ile 468 arasinda 8 bolunen sayilari yazdiralim
+
+    //S6: 325 ile 468 arasinda 8 e bolunen sayilari yazdiralim
 
 
-    // S7:325 ile 468 arasinda 8 bolunen sayilarin toplamini bulalim
+    // S7:325 ile 468 arasinda 8 e bolunen sayilarin toplamini bulalim
 
 
     // S8: 7ile 15 arasindaki tek sayilarin carpimini bulalim
@@ -46,4 +47,4 @@ public class C6_Lambdada_ForLoop_Aralik_Kontrolu {
 }
 //iterate bize sayilari istedigimiz sekilde yineletmeyi saglar yani buradaki ornekte 7ser7ser artmayi saglar
 //iterate icin bir baslangic degeri girilmeli ve artisin nasil olacagi belirtilmeli nerede biteceginide
-// limit() ile belilioruz
+// limit() ile belirliyoruz
