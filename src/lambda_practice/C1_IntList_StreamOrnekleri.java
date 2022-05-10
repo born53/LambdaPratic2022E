@@ -9,9 +9,14 @@ import java.util.stream.Collectors;
 public class C1_IntList_StreamOrnekleri {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(Arrays.asList(-5, -8, -2, -12, 0, 1, 12, 5, 6, 9, 15, 8));
-        hepsiniYaz(list);
-        negatifleriYaz(list);
-        System.out.println("pozitifList(list) = " + pozitifList(list));
+
+        hepsiniYaz(list);//-5 -8 -2 -12 0 1 12 5 6 9 15 8
+        System.out.println();
+         negatifleriYaz(list);
+        System.out.println( );
+      // pozitifList(list);//1 12 5 6 9 15 8
+
+      // System.out.println("pozitifList(list) = " + pozitifList(list));
         System.out.println("kareleriList(list) = " + kareleriList(list));
         System.out.println("kareleriTekrarsizList(list) = " + kareleriTekrarsizList(list));
         sirala(list);
@@ -25,21 +30,40 @@ public class C1_IntList_StreamOrnekleri {
     }
 
     // S1:listi aralarinda bosluk birakarak yazdiriniz //
-    public static void hepsiniYaz(List<Integer> l) {
-        l.stream().forEach(t -> System.out.print(t + " "));
+    public static void hepsiniYaz(List<Integer> l){
+        System.out.println("//S1:listi aralarinda bosluk birakarak yazdiriniz");
+        l.stream().forEach(t-> System.out.print(t+" "));//-5 -8 -2 -12 0 1 12 5 6 9 15 8
     }
-
     //S2: sadece negatif olanlari yazdir
     public static void negatifleriYaz(List<Integer> l) {
-        System.out.println();
-        l.stream().filter(t -> t < 0).forEach(t -> System.out.print(t + " "));
+        System.out.println("//S2: sadece negatif olanlari yazdir");
+        l.stream().
+                // filter(Methods::negatifMi).
+             filter(t -> t < 0).
+                forEach(t -> System.out.print(t + " "));
     }
 
     //S3: pozitif olanlardan yeni bir liste olustur
-    public static List<Integer> pozitifList(List<Integer> l) {
+    /*public static void pozitifList(List<Integer> l){
+    System.out.println("//S3: pozitif olanlardan yeni bir liste olustur");
+        l.stream().filter(Methods::pozitifMi).forEach(t-> System.out.print(t +" "));}*/
+
+
+
+     /*   public static List<Integer> pozitifList(List<Integer> l){
+            System.out.println("//S3: pozitif olanlardan yeni bir liste olustur");
+            return l.stream().filter(t->t>0).collect(Collectors.toList()););
+    }*/
+
+
+
+
+
+
+   /* public static List<Integer> pozitifList(List<Integer> l) {
         System.out.println();
         return l.stream().filter(t -> t > 0).collect(Collectors.toList());
-    }
+    }*/
 
 
     // S4: list in elemanlarin karelerinden yeni bir list olusturalim
